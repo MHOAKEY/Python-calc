@@ -6,7 +6,7 @@
 exit = False
 while exit == False:
     userNumber1=input("enter 1st number: ")
-    userOperator=input("+, - or *: ")
+    userOperator=input("+, -, * or /: ")
     userNumber2=input("enter 2nd number: ")
     
 
@@ -18,6 +18,9 @@ while exit == False:
         exit = True
     if userOperator == "*":
         userResult=int(userNumber1)*int(userNumber2)
+        exit = True
+    if userOperator == "/":
+        userResult=int(userNumber1)/int(userNumber2)
         exit = True
     else:
         userResult="I can only do + or -"
