@@ -19,23 +19,25 @@ while exit == False:
         print("Can only use whole numbers")
         continue
 
+    # print(userOperator == "*")
+
     if userOperator == "+":
         userResult = int(userNumber1) + int(userNumber2)
         exit = True
 
-    if userOperator == "-":
+    elif userOperator == "-":
         userResult = int(userNumber1) - int(userNumber2)
         exit = True
 
-    if userOperator == "*":
+    elif userOperator == "*":
         userResult = int(userNumber1) * int(userNumber2)
         exit = True
 
-    if userOperator == "/":
+    elif userOperator == "/":
         userResult = int(userNumber1) / int(userNumber2)
         exit = True
 
     else:
-        userResult="I can only do + or -"
+        userResult="I can only do +, -, *, or /"
         
     print(userResult)
